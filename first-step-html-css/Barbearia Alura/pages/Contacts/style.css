@@ -24,6 +24,7 @@ nav a {
   font-weight: bold;
   text-decoration: none;
   font-size: 22px;
+  transition: 0.5s color;
 }
   
 nav a:hover {
@@ -46,7 +47,11 @@ form {
   margin: 40px 0;
 }
 
-form label, form p {
+fieldset {
+  border: none;
+}
+
+form label, form legend {
   display: block;
   font-size: 20px;
   margin: 0 0 10px;
@@ -74,3 +79,22 @@ footer {
   font-size: 12px;
   margin: 20px 0 0;
 }  
+
+.send {
+  width: 40%;
+  padding: 15px 0 ;
+  background-color: #C78C19;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+  transition: 1s all;
+}
+
+.send:hover {
+  background-color: #8f6106;
+  transform: scale(0.7);
+}
