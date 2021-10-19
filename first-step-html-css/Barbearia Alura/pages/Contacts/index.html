@@ -28,33 +28,40 @@
     <form>
       <div>
         <label for="name">Nome e Sobrenome</label>
-        <input type="text" id="name">
-
+        <input type="text" id="name" class="input-default" required placeholder=" Digite seu nome completo">
         <label for="email">E-mail</label>
-        <input type="text" id="email">
-
+        <input type="email" id="email" class="input-default" required placeholder="seuemail@dominio.com">
         <label for="telephone">Telefone</label>
-        <input type="text" id="telephone">
-
+        <input type="tel" id="telephone" class="input-default" required placeholder="(XX) XXXXX-XXXX">
         <label for="message">Mensagem</label>
-        <textarea cols="70" rows="10" id="message"></textarea>
-
-        <input type="submit">
+        <textarea cols="70" rows="10" id="message" class="input-default" required>
+        </textarea>
       </div>
       <div>
         <p>Como prefere o nosso contato?</p>
-        <label for="radio-email">E-mail</label>
-        <input type="radio" name="contact" value="email" id="radio-email">
-
-        <label for="radio-telephone">Ligação</label>
-        <input type="radio" name="contact" value="telephone" id="radio-telephone">
-
-        <label for="radio-whatsapp">WhatsApp</label>
-        <input type="radio" name="contact" value="Whatsapp" id="radio-whatsapp">
+        <label for="radio-email">
+          <input type="radio" name="contact" value="email" id="radio-email">
+          E-mail
+        </label>
+        <label for="radio-telephone">
+          <input type="radio" name="contact" value="telephone" id="radio-telephone">
+          Ligação
+        </label>
+        <label for="radio-whatsapp">
+          <input type="radio" name="contact" value="Whatsapp" id="radio-whatsapp" checked>
+          WhatsApp
+        </label>
       </div>
+      <div>
+        <p>Qual horário prefere ser atendido?</p>
+        <select>
+          <option>Manhã</option>
+          <option>Tarde</option>
+          <option>Noite</option>
+        </select>
+        <label><input type="checkbox" class="checkbox" checked>Gostaria de receber nossas novidades por Email?</label>
 
-      <label><input type="checkbox">Gostaria de receber nossas novidades por Email?</label>
-
+        <input type="submit">
     </form>
   </main>
   <footer>
