@@ -1,5 +1,6 @@
 body {
   background-color: #FEFBF7;
+  font-family: 'Montserrat', sans-serif;
 }
   
 header {
@@ -16,6 +17,7 @@ nav {
 nav li {
   display: inline;  
   margin: 0 0 0 15px;
+  
 }
   
 nav a {
@@ -70,7 +72,7 @@ form label, form legend {
 
 footer {
   text-align: center;
-  background-image: url(bg.jpg);
+  background-image: url(../../assets/bg.jpg);
   padding: 40px;
 }
   
@@ -96,5 +98,21 @@ footer {
 
 .send:hover {
   background-color: #8f6106;
-  transform: scale(0.7);
+  transform: scale(1.1);
 }
+
+table {
+  margin: 20px 0 40px;
+}
+
+thead {
+  background: #555555;
+  color: white;
+  font-weight: bold;
+}
+
+td, th {
+  border: 1px solid #000000;
+  padding: 8px 15px;
+}
+
